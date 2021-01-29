@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box1 {
+  background-color: lightcoral;
+}
+.box2 {
+  background-color: lightblue;
+}
+.box3 {
+  background-color: lightgreen;
+}
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box3";
+}
+.box1 {
+  grid-area: box1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box2 {
+  grid-area: box2;
+}
+.box3 {
+  grid-area: box3;
+}
